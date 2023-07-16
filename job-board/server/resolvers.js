@@ -17,7 +17,7 @@ export const resolvers = {
       if (!job) {
         throw notFoundError("No job found with id " + id);
       }
-      return company;
+      return job;
     },
     jobs: () => getJobs(),
     company: async (_root, { id }) => {
